@@ -10,6 +10,7 @@ class Usuario{
         private string $login;
         private string $senha;
 
+        //Construtor
         public function __construct(
             string $nome,
             string $endereco,
@@ -25,6 +26,26 @@ class Usuario{
             $this->login        = $login;
             $this->senha        = $senha;
         }
+
+         //get
+         public function __get(string $nome){
+            return $nome;
+        }//fim do get genérico
+
+        //set
+        public function __set(string $nome, string $valor):void{
+            $this->nome = $valor;
+        }//fim do set genérico
+
+        //fim de imprimir
+        public function imprimir():string{
+            return "<br>Nome: ".$this->nome.
+                   "<br>Endereço:     ".$this->endereco.
+                   "<br>Telefone:     ".$this->telefone.
+                   "<br>Nascimento:     ".$this->dtNascimento.
+                   "<br>Login:     ".$this->login.
+                   "<br>Senha    :     ".$this->senha;
+        }//fim do método
     }
 
 
