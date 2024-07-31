@@ -3,42 +3,47 @@
 namespace PHP\Modelo;
 
 class Usuario{
-        private string $harry;
-        private string $senhor;
-        private string $percy;
-        private string $animal;
+        private string $codigo;
+        private string $titulo;
+        private string $autor;
+        private string $preco;
+        private int $qtdLivros;
 
         //Construtor
         public function __construct(
-            string $harry,
-            string $senhor,
-            int $percy,
-            string $animal)
+            string $codigo,
+            string $titulo,
+            string $autor,
+            string $preco,
+            string $qtdLivros)
         {
-            $this->harry         = $harry;
-            $this->senhor     = $senhor;
-            $this->percy     = $percy;
-            $this->animal = $animal;
+            $this->codigo  = $codigo;
+            $this->titulo = $titulo;
+            $this->autor  = $autor;
+            $this->preco = $preco;
+            $this->qtdLivros = $qtdLivros;
+
         }//fim de construtor
 
          //get
-         public function __get(string $nome){
+         public function __get(string $nome, string $login, string $senha){
             return $nome;
         }//fim do get genérico
 
         //set
-        public function __set(string $nome, string $valor):void{
+        public function __set(string $campop, string $valor):void{
             $this->nome = $valor;
         }//fim do set genérico
 
         //imprimir
         public function imprimir():string{
-            return "<br>Harry Potter: ".$this->harry.
-                   "<br>Senhor dos Anéis:     ".$this->senhor.
-                   "<br>Percy Jackson:     ".$this->percy.
-                   "<br>Animal Planet:     ".$this->animal;
-    }//fim de imprimir
+            return "<br>Código: ".$this->harry.
+                   "<br>Título:     ".$this->titulo.
+                   "<br>Autor:     ".$this->autor.
+                   "<br>Preço:     ".$this->preco.
+                   "<br>Quantidade de Livros:     ".$this->qtdLivros;
 
+    }//fim de imprimir
 }
 
 

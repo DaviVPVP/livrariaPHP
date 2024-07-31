@@ -46,6 +46,11 @@ class Usuario{
                    "<br>Login:     ".$this->login.
                    "<br>Senha    :     ".$this->senha;
         }//fim do método
+
+        public function validarUsuario(string $login, string $senha)
+        {
+            return $login . " " . $senha;
+        }
     }
 
 
