@@ -26,16 +26,15 @@
         }//fim do get genérico
 
         //set
-        public function __set():void
-        {
-            $this->campo = $valor;
+        public function __set(string $campo, string $valor):void{
+            $this->nome = $valor;
         }//fim do set genérico
 
         public function imprimir():string{
-            return "<br>Código: ".$this->codigo.
-                   "<br>Nome:     ".$this->nome.
-                   "<br>Horário:     ".$this->hora.
-                   "<br>Data:     ".$this->data;
+            return "<br>Código: " .$this->codigo.
+                   "<br>Nome:     " .$this->nome.
+                   "<br>Horário:     " .$this->hora.
+                   "<br>Data:     " .$this->data;
     }//fim de imprimir
     }
-?>
+?> 

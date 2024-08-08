@@ -3,22 +3,25 @@
 namespace PHP\Modelo;
 
 class Usuario{
+        private string $cpf;
         private string $nome;
         private string $endereco;
-        private int $telefone;
+        private string $telefone;
         private string $dtNascimento;
         private string $login;
         private string $senha;
 
         //Construtor
         public function __construct(
+            string $cpf,
             string $nome,
             string $endereco,
-            int $telefone,
+            string $telefone,
             string $dtNascimento,
             string $login,
             string $senha)
         {
+            $this->cpf         = $cpf;
             $this->nome         = $nome;
             $this->endereco     = $endereco;
             $this->telefone     = $telefone;
@@ -39,7 +42,8 @@ class Usuario{
 
         //fim de imprimir
         public function imprimir():string{
-            return "<br>Nome: ".$this->nome.
+            return "<br>CPF: ".$this->cpf.
+                   "<br>Nome: ".$this->nome.
                    "<br>Endereço:     ".$this->endereco.
                    "<br>Telefone:     ".$this->telefone.
                    "<br>Nascimento:     ".$this->dtNascimento.
@@ -51,7 +55,16 @@ class Usuario{
         {
             return $login . " " . $senha;
         }
+
+        public function validacao(string $login, string $senha){
+            if($this->login == 'Fabio' &&  $this->senha == "loveti"){
+               return "Login válido";
+            }else{
+               return "Login inválido";
+            }    
+         }//fim do metodo validação  
     }
+
 
 
 
