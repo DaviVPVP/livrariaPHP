@@ -26,9 +26,9 @@
             }catch(Exception $erro){
                 echo $erro;
             }
-        }//fim do método
+        }//fim de método
 
-}//fim da classe
+}//fim de classe
 
 
 ?>

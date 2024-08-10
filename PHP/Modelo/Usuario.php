@@ -33,12 +33,12 @@ class Usuario{
          //get
          public function __get(string $nome){
             return $nome;
-        }//fim do get genérico
+        }//fim de get genérico
 
         //set
         public function __set(string $nome, string $valor):void{
             $this->nome = $valor;
-        }//fim do set genérico
+        }//fim de set genérico
 
         //fim de imprimir
         public function imprimir():string{
@@ -49,7 +49,7 @@ class Usuario{
                    "<br>Nascimento:     ".$this->dtNascimento.
                    "<br>Login:     ".$this->login.
                    "<br>Senha    :     ".$this->senha;
-        }//fim do método
+        }//fim de método
 
         public function validarUsuario(string $login, string $senha)
         {
@@ -62,7 +62,7 @@ class Usuario{
             }else{
                return "Login inválido";
             }    
-         }//fim do metodo validação  
+         }//fim de metodo validação  
     }
 
 

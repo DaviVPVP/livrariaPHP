@@ -31,7 +31,7 @@
             }catch(Exception $erro){
                 echo $erro;
             }
-        }//fim do método
+        }//fim de método
 
         function consultarTudo(Conexao $conexao,
                             string $nomeTabela

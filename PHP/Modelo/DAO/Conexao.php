@@ -14,6 +14,6 @@
             }catch(Except $erro){
                 return $erro;
             }
-        }//fim do conectar
-    }//fim da classe
+        }//fim de conectar
+    }//fim de classe
 ?>

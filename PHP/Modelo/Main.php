@@ -6,7 +6,7 @@
     require_once('Compra.php');
     require_once('Pessoa.php');
 
-    $usuario1 = new Usuario("777", "Fabi", "SBC", "40028922","2000", "Fabio","loveti");
+    $usuario1 = new Usuario("777", "Fabi", "SBC", "40028922", "2000", "Fabio", "loveti");
 
     $livros1 = new Livros(777, "Harry Potter", "J.K Rowling", 30.00, 1);
 
@@ -14,7 +14,7 @@
 
     $compra1 = new Compra("777", "Harry Potter", "J.K Rowling", 30.00, 1);
 
-    $pessoa1 = new Pessoa("777", "Fabio", "SBC", "40028922","2000", "Fabi","lovetec");
+    $pessoa1 = new Pessoa("777", "Fabio", "SBC", "40028922", "2000", "Fabi", "lovetec");
 
 
     echo $usuario1->imprimir() ."<br>";
